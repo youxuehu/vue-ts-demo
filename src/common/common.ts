@@ -1,4 +1,5 @@
 import {BlockAddress} from "@yeying-community/yeying-web3";
+// @ts-ignore
 import { type ResponseStatus,ResponseCodeEnum } from '@yeying-community/yeying-next'
 
 export function getBlockAddress(): BlockAddress {

@@ -1,3 +1,4 @@
+// @ts-ignore
 import { createStore } from 'vuex'
 
 export default createStore({
@@ -5,12 +6,15 @@ export default createStore({
     user: null
   },
   mutations: {
+    // @ts-ignore
     SET_USER(state, user) {
       state.user = user
     }
   },
   actions: {
+
   },
   modules: {
+
   }
 })

@@ -1,7 +1,7 @@
 <template>
     <el-header class="header">
       <div class="left">
-        <img src="../assets/owl-logo.png" class="logo" />
+        <img src="../../assets/vue.svg" class="logo" />
         <span class="title">Owl Admin</span>
       </div>
       <el-dropdown @command="handleCommand">

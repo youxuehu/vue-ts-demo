@@ -1,12 +1,13 @@
+// @ts-ignore
 import { Authenticate,ProviderOption,MessageHeader } from '@yeying-community/yeying-next'
-import { Task, AddTaskRequestBodySchema, AddTaskRequestSchema, AddTaskResponseBody, AddTaskResponseBodySchema,
-    DetailTaskRequestSchema, DetailTaskRequestBodySchema, DetailTaskResponseBodySchema, DetailTaskResponseBody,
-    ListTaskRequestSchema, ListTaskRequestBodySchema, ListTaskResponseBodySchema, ListTaskResponseBody,
-    UpdateTaskRequestSchema, UpdateTaskRequestBodySchema, UpdateTaskResponseBodySchema, UpdateTaskResponseBody,
-    DeleteTaskRequestSchema, DeleteTaskRequestBodySchema, DeleteTaskResponseBodySchema, DeleteTaskResponseBody,
-    TaskMetadata
+import { Task, AddTaskRequestBodySchema, AddTaskRequestSchema, type AddTaskResponseBody, AddTaskResponseBodySchema,
+    DetailTaskRequestSchema, DetailTaskRequestBodySchema, DetailTaskResponseBodySchema, type DetailTaskResponseBody,
+    ListTaskRequestSchema, ListTaskRequestBodySchema, ListTaskResponseBodySchema, type ListTaskResponseBody,
+    UpdateTaskRequestSchema, UpdateTaskRequestBodySchema, UpdateTaskResponseBodySchema, type UpdateTaskResponseBody,
+    DeleteTaskRequestSchema, DeleteTaskRequestBodySchema, DeleteTaskResponseBodySchema, type DeleteTaskResponseBody,
+    type TaskMetadata
  } from '../../../yeying/api/apps/zuoyepigai/task_pb'
-import { Client, createClient } from '@connectrpc/connect'
+import { type Client, createClient } from '@connectrpc/connect'
 import { createGrpcWebTransport } from '@connectrpc/connect-web'
 import { create, toBinary } from '@bufbuild/protobuf'
 

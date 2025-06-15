@@ -10,7 +10,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(row, rowIndex) in data" :key="row.id">
+        <tr v-for="(row) in data" :key="row.id">
           <td v-for="(column, colIndex) in columns" :key="colIndex">
             {{ row[column.field] }}
           </td>

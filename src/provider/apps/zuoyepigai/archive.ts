@@ -1,14 +1,15 @@
+// @ts-ignore
 import { Authenticate,ProviderOption,MessageHeader } from '@yeying-community/yeying-next'
 import { Archive, 
-    ArchiveListRequestBodySchema, ArchiveListRequestSchema, ArchiveListResponseBody, ArchiveListResponseBodySchema,
-    ArchiveAddRequestBodySchema, ArchiveAddRequestSchema, ArchiveAddResponseBody, ArchiveAddResponseBodySchema,
-    ArchiveDeleteRequestBodySchema, ArchiveDeleteRequestSchema, ArchiveDeleteResponseBody, ArchiveDeleteResponseBodySchema,
-    ArchiveUpdateRequestBodySchema, ArchiveUpdateRequestSchema, ArchiveUpdateResponseBody, ArchiveUpdateResponseBodySchema,
-    ArchiveDetailRequestSchema, ArchiveDetailRequestBodySchema, ArchiveDetailResponseBodySchema, ArchiveDetailResponseBody,
-    ArchiveDetailStudentRequestSchema, ArchiveDetailStudentRequestBodySchema, ArchiveDetailStudentResponseBodySchema, ArchiveDetailStudentResponseBody,
-    ArchiveMetadata
+    ArchiveListRequestBodySchema, ArchiveListRequestSchema, type ArchiveListResponseBody, ArchiveListResponseBodySchema,
+    ArchiveAddRequestBodySchema, ArchiveAddRequestSchema, type ArchiveAddResponseBody, ArchiveAddResponseBodySchema,
+    ArchiveDeleteRequestBodySchema, ArchiveDeleteRequestSchema, type ArchiveDeleteResponseBody, ArchiveDeleteResponseBodySchema,
+    ArchiveUpdateRequestBodySchema, ArchiveUpdateRequestSchema, type ArchiveUpdateResponseBody, ArchiveUpdateResponseBodySchema,
+    ArchiveDetailRequestSchema, ArchiveDetailRequestBodySchema, ArchiveDetailResponseBodySchema, type ArchiveDetailResponseBody,
+    ArchiveDetailStudentRequestSchema, ArchiveDetailStudentRequestBodySchema, ArchiveDetailStudentResponseBodySchema, type ArchiveDetailStudentResponseBody,
+    type ArchiveMetadata
  } from '../../../yeying/api/apps/zuoyepigai/archive_pb'
-import { Client, createClient } from '@connectrpc/connect'
+import { type Client, createClient } from '@connectrpc/connect'
 import { createGrpcWebTransport } from '@connectrpc/connect-web'
 import { create, toBinary } from '@bufbuild/protobuf'
 

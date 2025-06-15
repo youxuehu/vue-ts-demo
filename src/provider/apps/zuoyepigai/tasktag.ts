@@ -1,3 +1,4 @@
+// @ts-ignore
 import { Authenticate,type ProviderOption,type MessageHeader } from '@yeying-community/yeying-next'
 import { TaskTag, AddTaskTagRequestBodySchema, AddTaskTagRequestSchema, type AddTaskTagResponseBody, AddTaskTagResponseBodySchema,
     DetailTaskTagRequestSchema, DetailTaskTagRequestBodySchema, DetailTaskTagResponseBodySchema, type DetailTaskTagResponseBody,

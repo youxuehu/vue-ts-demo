@@ -8,7 +8,6 @@
   <el-container class="layout-container">
     <SideMenu />
     <el-container>
-
       <el-main>
         <router-view />
       </el-main>
@@ -17,7 +16,9 @@
 </template>
 
 <script setup lang="ts">
+// @ts-ignore
 import Header from './components/Layout/Header.vue'
+// @ts-ignore
 import SideMenu from './components/Layout/SideMenu.vue'
 </script>
 

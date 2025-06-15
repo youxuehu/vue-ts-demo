@@ -1,11 +1,12 @@
+// @ts-ignore
 import { Authenticate,ProviderOption,MessageHeader } from '@yeying-community/yeying-next'
 import { Warehouse, 
-    AddWarehouseRequestBodySchema, AddWarehouseRequestSchema, AddWarehouseResponseBody, AddWarehouseResponseBodySchema,
-    ListWarehouseRequestBodySchema, ListWarehouseRequestSchema, ListWarehouseResponseBody, ListWarehouseResponseBodySchema,
-    DetailWarehouseRequestBodySchema, DetailWarehouseRequestSchema, DetailWarehouseResponseBody, DetailWarehouseResponseBodySchema,
-    WarehouseMetadata
+    AddWarehouseRequestBodySchema, AddWarehouseRequestSchema, type AddWarehouseResponseBody, AddWarehouseResponseBodySchema,
+    ListWarehouseRequestBodySchema, ListWarehouseRequestSchema, type ListWarehouseResponseBody, ListWarehouseResponseBodySchema,
+    DetailWarehouseRequestBodySchema, DetailWarehouseRequestSchema, type DetailWarehouseResponseBody, DetailWarehouseResponseBodySchema,
+    type WarehouseMetadata
  } from '../../../yeying/api/apps/zuoyepigai/warehouse_pb'
-import { Client, createClient } from '@connectrpc/connect'
+import { type Client, createClient } from '@connectrpc/connect'
 import { createGrpcWebTransport } from '@connectrpc/connect-web'
 import { create, toBinary } from '@bufbuild/protobuf'
 
